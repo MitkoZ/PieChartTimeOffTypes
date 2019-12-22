@@ -107,8 +107,10 @@ export default class PieChartTimeOffTypesWebPartWebPart extends BaseClientSideWe
       is3D: true,
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-    chart.draw(dataContainer, options);
+    if(timeOffTypeDaysMap.size != 0){ // Prevents chart title from visualizing if there is no data
+      var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+      chart.draw(dataContainer, options);
+    }
   }
 
   public render(): void {
