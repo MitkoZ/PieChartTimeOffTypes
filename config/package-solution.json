@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pie-chart-time-off-types-client-side-solution",
+    "id": "9619869c-b08c-4ef9-b171-42b621faa22c",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": true
+  },
+  "paths": {
+    "zippedPackage": "solution/pie-chart-time-off-types.sppkg"
+  }
+}
